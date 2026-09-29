@@ -1,0 +1,56 @@
+@if (product) {
+
+  <section class="product-details">
+
+    <div class="image-section">
+
+      <img
+        [src]="product.image"
+        [alt]="product.name"
+      >
+
+    </div>
+
+    <div class="details-section">
+
+      <p class="category">
+        {{ product.category }}
+      </p>
+
+      <h1>
+        {{ product.name }}
+      </h1>
+
+      <p class="rating">
+        ⭐ {{ product.rating }}
+      </p>
+
+      <h2>
+        ₹{{ product.prices }}
+      </h2>
+
+      <p class="description">
+        {{ product.description }}
+      </p>
+
+      <button>
+        Add to Cart
+      </button>
+
+      <br>
+
+      <a routerLink="/products">
+        ← Back to Products
+      </a>
+
+    </div>
+
+  </section>
+
+}
+
+@else {
+
+  <h2>Product not found.</h2>
+
+}

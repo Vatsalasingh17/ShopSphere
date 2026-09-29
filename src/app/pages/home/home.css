@@ -1,0 +1,60 @@
+.hero
+{
+    min-height:450px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:  #f3f4f6;
+}
+
+.hero-content h1
+{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    color:#555;
+    margin-bottom:30px;
+}
+
+.shop-button
+{
+    display:inline-block;
+    padding:12px 25px;
+    background: #2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.categories h2
+{
+    font-size:32px
+}
+
+.category-container
+{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+}
+
+.category-card
+{
+    width:250px;
+    padding:30px;
+    border:1px solid #ddd;
+    border-radius:10px;
+
+    cursor:pointer;
+}
+
+.category-card:hover
+{
+   box-shadow:0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
